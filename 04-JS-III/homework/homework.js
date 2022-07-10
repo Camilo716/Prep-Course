@@ -30,13 +30,10 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
 
-var arr= []
-
-for (let i = 0; i < array.length; i++) {
-  arr.push (array[i]+1);
-}  
-
-return arr
+var nuevoArray= array.map(function (elemento) {
+  return elemento+1
+})
+return nuevoArray
 }
 
 
